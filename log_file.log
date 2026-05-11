@@ -1,5 +1,5 @@
 # vsim work.tb_alu_verify -l log_file.log -coverage -c -do "coverage save -onexit -codeAll coverage_file.ucdb; run -all; exit" 
-# Start time: 15:46:40 on May 11,2026
+# Start time: 23:29:11 on May 11,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 2 FSMs in module "alu_design(fast)".
 # //  Questa Sim
@@ -2179,8 +2179,515 @@
 #   L     : DUT=0 REF=0 PASS
 #   ERR   : DUT=1 REF=1 PASS
 #   OPA   : DUT=5 REF=0 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- A_INV10_FEC_ROW1 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- A_INV10_FEC_ROW1 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- A_INV10_FEC_ROW1 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# --- A_INV10_FEC_ROW1 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=0 PASS
+# === FEC INP_VALID==3||INP_VALID==2 _0 ROWS ===
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- B_INV01_FEC_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- B_INV01_FEC_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- B_INV01_FEC_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- B_INV01_FEC_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- 00_FEC_ROW1_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# --- B_INV01_FEC_ROW3 ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=0 REF=5 PASS
+# === ERR ELSE BRANCHES - STATEMENT ZEROS ===
+# --- ADD_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ADD_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ADD_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUB_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUB_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUB_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ADDCIN_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ADDCIN_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ADDCIN_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUBCIN_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUBCIN_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SUBCIN_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- CIN_OFLOW_BRANCH ---
+#   RES   : DUT=252 REF=252 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=1 REF=1 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=0 REF=0 PASS
+#   OPA   : DUT=2 REF=5 PASS
+# --- _ZERO_CIN1_OFLOW ---
+#   RES   : DUT=255 REF=255 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=1 REF=0 FAIL
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=0 REF=0 PASS
+#   OPA   : DUT=0 REF=0 PASS
+# --- CMP_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- CMP_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- CMP_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SADD_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SADD_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SADD_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SSUB_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SSUB_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- SSUB_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- IC_AND_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- IC_AND_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- IC_AND_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- C_NAND_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- GIC_OR_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- IC_NOR_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- IC_XOR_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- C_XNOR_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=5 REF=3 PASS
+# --- ROL_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# --- ROL_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# --- ROL_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# --- ROR_INV00_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# --- ROR_INV01_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# --- ROR_INV10_ERR ---
+#   RES   : DUT=0 REF=0 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=1 REF=1 PASS
+#   OPA   : DUT=171 REF=2 PASS
+# === ROL DEFAULT + ROR MISSING BRANCHES ===
+# --- 4_MISSING_BRANCH ---
+#   RES   : DUT=186 REF=186 PASS
+#   COUT  : DUT=0 REF=0 PASS
+#   OFLOW : DUT=0 REF=0 PASS
+#   G     : DUT=0 REF=0 PASS
+#   E     : DUT=0 REF=0 PASS
+#   L     : DUT=0 REF=0 PASS
+#   ERR   : DUT=0 REF=0 PASS
+#   OPA   : DUT=171 REF=4 PASS
 # ** Note: $finish    : tb.v(2171)
-#    Time: 3066 ns  Iteration: 0  Instance: /tb_alu_verify
+#    Time: 3626 ns  Iteration: 0  Instance: /tb_alu_verify
 # Saving coverage database on exit...
-# End time: 15:46:41 on May 11,2026, Elapsed time: 0:00:01
+# End time: 23:29:13 on May 11,2026, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
