@@ -1,0 +1,21 @@
+imulation / build folders
+work/
+simv.daidir/
+csrc/
+covReport/
+
+# VCS / Synopsys files
+*.qdb
+*.qpg
+*.qtl
+*.vcd
+
+# Temp / swap files
+*.swp
+*~
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
