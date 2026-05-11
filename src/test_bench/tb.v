@@ -1923,7 +1923,7 @@ compare("INCA_INV00_FEC_ROW1_ROW3");
     inp_valid=2'b10; MODE=1;
 end
 compare("INCA_INV10_FEC_ROW1");
-/*
+
 // DEC_A CMD=4'd5: INP_VALID=00
 @(negedge CLK) begin
     OPA=5; OPB=0; CMD=4'd5;
@@ -2166,7 +2166,7 @@ $display("=== ROL DEFAULT + ROR MISSING BRANCHES ===");
     OPA=8'b1010_1011; OPB=8'd4;    // OPB[2:0]=100
     CMD=4'd13; inp_valid=2'b11; MODE=0;
 end
-compare("ROR_BY_4_MISSING_BRANCH");*/
+compare("ROR_BY_4_MISSING_BRANCH");
     #80;
     $finish;
   end
