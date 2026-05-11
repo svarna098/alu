@@ -1,0 +1,105 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/varna/alu_verify
+T_opt
+!s110 1778494600
+VDhZ:kG?=gWgV02O0487Ih3
+04 13 4 work tb_alu_verify fast 0
+=1-6805caf5892e-6a01ac88-872e6-3c5fd
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+valu_design
+!s110 1778494593
+!i10b 1
+!s100 hKa69:]QSmLU24ljo@PzI3
+IL65e_aLBNl`TmI5?RWB2U1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1778491651
+8design.v
+Fdesign.v
+L0 3
+Z3 OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1778494593.000000
+!s107 design.v|
+!s90 +acc|+cover|-l|log_file.log|design.v|
+!i113 0
+!s102 +cover
+o+acc +cover -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+valu_reference_model
+Z4 !s110 1778494588
+!i10b 1
+!s100 QSENCAcQEGmPnMbYC0GO91
+Ib<ECdXo=zYTEkA0To5H?K1
+R2
+R0
+w1778494373
+8ref_design.v
+Fref_design.v
+L0 27
+R3
+r1
+!s85 0
+31
+Z5 !s108 1778494588.000000
+Z6 !s107 tb.v|ref_design.v|design.v|
+Z7 !s90 design.v|ref_design.v|tb.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vEight_bit_ALU_rtl_design
+!s110 1778494384
+!i10b 1
+!s100 Z>cb]mP_=_?OlZoodQ`A32
+IiMP<D[hn3HKgIiMg17:TO1
+R2
+R0
+w1778492547
+8alu_design.v
+Falu_design.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1778494383.000000
+!s107 design.v|tb.v|alu_design.v|
+!s90 alu_design.v|tb.v|design.v|
+!i113 0
+R8
+R1
+n@eight_bit_@a@l@u_rtl_design
+vtb_alu_verify
+R4
+!i10b 1
+!s100 QzTESV2YY8?MgG@eG@<[l1
+I`zgNT>T24Oaei8eEfV_161
+R2
+R0
+w1778494572
+8tb.v
+Ftb.v
+L0 781
+R3
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
