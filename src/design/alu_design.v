@@ -42,7 +42,7 @@ module Eight_bit_ALU_rtl_design #(
             end
             
             else begin
-                RES   <= temp_res;
+             RES   <= temp_res[width-1:0];
                 COUT  <= temp_cout;
                 OFLOW <= temp_oflow;
                 G     <= temp_g;
@@ -69,7 +69,7 @@ module Eight_bit_ALU_rtl_design #(
             case (CMD)
                 4'b0000: begin // CMD 0: ADD
                     if(inp_valid == 2'b11) begin
-                        temp_res = OPA + OPB;
+                     temp_res = OPA + OPB;
                         temp_cout = temp_res[width]; 
                     end else temp_err = 1'b1;
                 end
